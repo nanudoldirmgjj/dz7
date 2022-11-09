@@ -27,7 +27,8 @@ numberArr.map(item =>    Math.floor(item) ); // [6, 6, 6] всегда к бол
 19 часов 20 минут (здесь будет ваше время)
 */
 
-let day = new Date().toLocaleDateString();
-console.log(`сегодня ${now}`);
-let time = new Date().toLocaleTimeString();
-console.log (time); 
+
+let newDate = new Date(),
+    hour = newDate.getHours(),
+    minute = newDate.getMinutes();    
+console.log(`${hour} hours ${minute} minutes`);
